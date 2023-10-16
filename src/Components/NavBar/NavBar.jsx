@@ -1,19 +1,26 @@
+import './NavBar.css'
 
-const Nav = () => {
+const NavBar = () => {
     return (
-    <div>
-        <header className="navi">
-            <nav>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Catálogo</li>
-                    <li>Contacto</li>
-                    <li>Perfil</li>
+        <div className="navbar-container">
+            <div>
+                <img src={'./images/logoJoystick.png'} alt="Logo" width={150}/>
+            </div>
+            <div>
+                <ul className='list-container'>
+                    <li>
+                        <button className='button'>PS4/PS5</button>
+                    </li>
+                    <li>
+                        <button className='button'>XBOX</button>
+                    </li>
+                    <li>
+                        <button className='button'>PC</button>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-    </div>
-    );
-}
+            </div>
+        </div>
+    )
+};
 
-export default Nav;
+export default NavBar;
