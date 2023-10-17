@@ -1,6 +1,10 @@
 .carrito {
-    background-color: #e23e57;
+    background-color: #00ADB5;
     color: #fff;
     height: 50px;
     display: flex;
+    font-size: 24px;
+    align-items: center;
+    border: 2px solid #eeeeee;
+    padding: 2px;
 }

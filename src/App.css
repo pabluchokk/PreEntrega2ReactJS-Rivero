@@ -4,5 +4,10 @@
 }
 
 body {
-  background-color: #EEEEEE;
+  background-color: #393e46
+}
+
+@font-face {
+  font-family: "CaviarB";
+  src: url(../public/fonts/CaviarDreams_Bold.ttf);
 }

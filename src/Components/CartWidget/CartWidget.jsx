@@ -7,7 +7,7 @@ export const CartWidget = () => {
     <div className='carrito'>
         <Icon.Cart />
         <div>
-            <span>4</span>
+            <span>0</span>
         </div>
     </div>
     )

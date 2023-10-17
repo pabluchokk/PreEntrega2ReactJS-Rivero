@@ -1,13 +1,16 @@
+
 .navbar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
-
+    color: #FFF;
 }
 
 .title {
     display: flex;
+    font-family: "CaviarB";
+    font-size: 18px;
 }
 
 .list-container {
@@ -18,17 +21,13 @@
     margin: 18px;
 }
 
-/* .list-container:hover {
-    
-} */
-
 .button {
-    border: 2px solid #311d3f;
-    background-color: #E23E57;
+    border: 2px solid #393e46;
+    background-color: #00adb5;
     color: #fff;
     width: 200px;
     height: 30px;
     border-radius: 25px;
+    font-family: "CaviarB";
     font-size: 16px;
-    
 }
