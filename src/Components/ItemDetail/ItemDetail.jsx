@@ -1,3 +1,4 @@
+import ItemCount from '../ItemCount/ItemCount'
 import './styles.css'
 
 const ItemDetail = ({ itemSelected }) => {
@@ -10,6 +11,10 @@ const ItemDetail = ({ itemSelected }) => {
             </div>
 
             <p>${itemSelected?.price}</p>
+            <div>
+                <p>Cantidad a comprar:</p>
+                <ItemCount />
+            </div>
         </div>
     )
 }

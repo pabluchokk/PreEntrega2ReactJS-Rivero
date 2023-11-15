@@ -10,13 +10,15 @@
 .title {
     display: flex;
     font-family: "CaviarB";
-    font-size: 18px;
+    font-size: 38px;
+    text-decoration: none;
 }
 
 .list-container {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     width: 100%;
     margin: 18px;
 }

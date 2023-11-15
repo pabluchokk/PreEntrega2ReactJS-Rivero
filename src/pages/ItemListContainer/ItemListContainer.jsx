@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ItemList from "../../Components/ItemList/ItemList";
-import ItemCount from "../../Components/ItemCount/ItemCount";
 import "./ItemListContainer.css";
 
 export const ItemListContainer = ({ greeting }) => {
@@ -20,7 +19,6 @@ export const ItemListContainer = ({ greeting }) => {
     return (
     <div /* className="saludo" */>
         {/* {greeting} */}
-        <ItemCount /> 
         {productList.length > 0 ? (
             <ItemList productList={productList} />
         ) : (

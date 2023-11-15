@@ -6,19 +6,24 @@ const NavBar = () => {
     return (
         <div className="navbar-container">
             <div className='title'>
-                <img src={'./images/logoJoystick.png'} alt="Logo" width={90} height={80}/>
-                <h1>GearUp</h1>
+                {/* <img src={'./images/logoJoystick.png'} alt="Logo" width={90} height={80}/> */}
+                <h1>
+                    <Link to={"/"} className='title'>GearUp</Link>
+                </h1>
             </div>
             <div>
                 <ul className='list-container'>
                     <li>
-                        <Link to={'/category/playstation'} className='button'>PS4/PS5</Link>
+                        <Link to={'/category/electronics'} className='button'>Electrónicos</Link>
                     </li>
                     <li>
-                        <Link to={'/category/xbox'} className='button'>XBOX</Link>
+                        <Link to={'/category/jewelry'} className='button'>Joyería</Link>
                     </li>
                     <li>
-                        <Link to={'/category/pc'} className='button'>PC</Link>
+                        <Link to={"/category/men's clothing"} className='button'>Ropa de hombre</Link>
+                    </li>
+                    <li>
+                        <Link to={"/category/women's clothing"} className='button'>Ropa de mujer</Link>
                     </li>
                 </ul>
             </div>
