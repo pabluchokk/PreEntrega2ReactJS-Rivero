@@ -1,20 +1,32 @@
 import { useEffect, useState } from "react";
 import ItemList from "../../Components/ItemList/ItemList";
+import { useParams } from "react-router-dom";
 import "./ItemListContainer.css";
 
 export const ItemListContainer = ({ greeting }) => {
+    const { categoryId } = useParams();
     const [productList, setProductList] = useState([]);
 
     const fetchProducts = () => {
-        fetch("https://fakestoreapi.com/products")
-        .then((response) => response.json())
+        let url = "https://fakestoreapi.com/products";
+        if (categoryId) {
+            url += `/category/${categoryId}`;
+        }
+        console.log("coso")
+        fetch(url)
+        .then(response => response.json()) 
         .then((data) => setProductList(data))
-        .catch((error) => console.log(error));    
+        .catch((error) => console.error(error)  )
 };
 
     useEffect(() => {
+        console.log("holita")
         fetchProducts();
-    }, [])
+    }, [categoryId])
+
+    useEffect(() => {
+        console.log("Categoría actualizada:", categoryId);
+    }, [categoryId]);
 
     return (
     <div /* className="saludo" */>

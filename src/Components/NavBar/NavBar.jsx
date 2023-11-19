@@ -12,20 +12,22 @@ const NavBar = () => {
                 </h1>
             </div>
             <div>
-                <ul className='list-container'>
-                    <li>
-                        <Link to={'/category/electronics'} className='button'>Electrónicos</Link>
-                    </li>
-                    <li>
-                        <Link to={'/category/jewelry'} className='button'>Joyería</Link>
-                    </li>
-                    <li>
-                        <Link to={"/category/men's clothing"} className='button'>Ropa de hombre</Link>
-                    </li>
-                    <li>
-                        <Link to={"/category/women's clothing"} className='button'>Ropa de mujer</Link>
-                    </li>
-                </ul>
+            // NavBar.jsx
+<ul className='list-container'>
+    <li>
+        <Link to="/category/electronics" className='button'>Electrónicos</Link>
+    </li>
+    <li>
+        <Link to="/category/jewelery" className='button'>Joyería</Link>
+    </li>
+    <li>
+        <Link to="/category/men's clothing" className='button'>Ropa de hombre</Link>
+    </li>
+    <li>
+        <Link to="/category/women's clothing" className='button'>Ropa de mujer</Link>
+    </li>
+</ul>
+
             </div>
                 <CartWidget />
         </div>
